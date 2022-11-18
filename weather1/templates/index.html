@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Pune Weather</title>
+    <style>
+        .bg {
+            background-image: url('https://content.r9cdn.net/rimg/dimg/a9/34/cb9391a1-city-16803-175265b2aff.jpg?width=1366&height=768&xhint=1518&yhint=1641&crop=true');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg">
+    <h1 class="text-center">How is the weather in Pune?</h1>
+    <div class="container">
+        <h3>{{ weather.city }}</h3>
+        <p>{{ weather.temperature }} *F</p>
+        <p>{{weather.description }}</p>
+        <p>Humidity level: {{weather.humidity}}</p>
+        <p>feels like {{weather.feels}} *F</p>
+    </div>
+
+
+
+    
+</body>
+</html>
